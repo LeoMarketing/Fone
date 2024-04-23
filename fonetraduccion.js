@@ -47,6 +47,16 @@ let about_us = document.getElementById("about-us");
 let services = document.getElementById("services");
 let blog = document.getElementById("blog");
 let contact = document.getElementById("contact");
+let h1_1 = document.getElementById("h1-1");
+let h2_6 = document.getElementById("h2-6");
+let t23 = document.getElementById("t23");
+let account = document.getElementById("account");
+let sign_up = document.getElementById("sign-up");
+let log_in = document.getElementById("log-in");
+let reset = document.getElementById("reset");
+let legal1 = document.getElementById("legal1");
+let legal2 = document.getElementById("legal2");
+let cta6 = document.getElementById("cta6");
 
 /* Eventos de click para cambiar idioma */
 espanol.onclick = ()=>{
@@ -59,9 +69,30 @@ english.onclick = ()=>{
     localStorage.setItem("Lang","english");
 };
 
+italiano.onclick = ()=>{
+    setLanguage("italiano");
+    localStorage.setItem("Lang","italiano");
+};
+
+francais.onclick = ()=>{
+    setLanguage("francais");
+    localStorage.setItem("Lang","francais");
+};
+
+russian.onclick = ()=>{
+    setLanguage("russian");
+    localStorage.setItem("Lang","russian");
+};
+
+german.onclick = ()=>{
+    setLanguage("german");
+    localStorage.setItem("Lang","german");
+};
+
 onload = ()=>{
     setLanguage(localStorage.getItem("Lang"));
 };
+
 
 /* Traducciones */
 function setLanguage(getLanguage){
@@ -110,6 +141,16 @@ function setLanguage(getLanguage){
       services.innerHTML = "servicios";
       blog.innerHTML = "blog";
       contact.innerHTML = "contacto";
+      h1_1.innerHTML = "Tour Agency Owners Share Their Awesome Experience with Foné";
+      h2_6.innerHTML = "Stay in the Loop";
+      t23.innerHTML = "Subscribe to Our Mailing List for Exclusive Promos, Products, Services, and News Updates!";
+      account.innerHTML = "cuenta";
+      sign_up.innerHTML = "registrarse";
+      log_in.innerHTML = "iniciar sesión";
+      reset.innerHTML = "restablecer contraseña";
+      legal1.innerHTML = "términos y condiciones";
+      legal2.innerHTML = "política de privacidad";
+      cta6.innerHTML = "Alquile radios aquí";
   } else if(getLanguage === "english"){
       Herobulb.innerHTML = "Enjoy seamless online access, prompt deliveries, and personalized support from anywhere in the world. Your next adventure awaits, just a click away!";
       explore.innerHTML = "explore";
@@ -155,5 +196,126 @@ function setLanguage(getLanguage){
       services.innerHTML = "services";
       blog.innerHTML = "blog";
       contact.innerHTML = "contact";
+      h1_1.innerHTML = "Tour Agency Owners Share Their Awesome Experience with Foné";
+      h2_6.innerHTML = "Stay in the Loop";
+      t23.innerHTML = "Subscribe to Our Mailing List for Exclusive Promos, Products, Services, and News Updates!";
+      account.innerHTML = "account";
+      sign_up.innerHTML = "sign up";
+      log_in.innerHTML = "log in";
+      reset.innerHTML = "reset password";
+      legal1.innerHTML = "terms & conditions";
+      legal2.innerHTML = "privacy-policy";
+      cta6.innerHTML = "Rent Radio Here";
+  } else if(getLanguage === "italiano"){
+      Herobulb.innerHTML = "Goditi un accesso online senza interruzioni, consegne rapide e supporto personalizzato ovunque nel mondo. La tua prossima avventura ti aspetta, a un solo clic di distanza!";
+      explore.innerHTML = "esplora";
+      cta1.innerHTML = "Noleggia radio oggi!";
+      shop.innerHTML = "negozio";
+      cta2.innerHTML = "Iscriviti e ricevi: 30% di sconto su tutto!";
+      h2_1.innerHTML = "Noleggio e vendita di ricevitori audio per visite guidate";
+      t1.innerHTML = "Qualità superiore, audio cristallino, facile da usare, affidabile, con autonomia fino a 10 giorni. Il nostro sistema consente un'esperienza di visita arricchente, libera da rumore e rispettosa dell'ambiente.";
+      cta3.innerHTML = "Prenota servizio";
+      t2.innerHTML = "Noleggio di guide audio e creazione di itinerari multilingue per diverse destinazioni turistiche con oratori ed esperti qualificati.";
+      h2_2.innerHTML = "Soluzioni di Traduzione";
+      t3.innerHTML = "Noleggia i nostri sistemi audio per eventi globali, conferenze e riunioni internazionali. Qualità premium e supporto tecnico completo, dedicato e personalizzato.";
+      h2_3.innerHTML = "Piattaforma di Prenotazione Online";
+      t4.innerHTML = "Ora puoi accedere rapidamente a qualsiasi dei nostri servizi da qualsiasi parte del mondo con la nostra Piattaforma di Prenotazione Online. Con un solo clic, puoi noleggiare o acquistare ricevitori audio per visite guidate, prenotare tour con guide multilingue o assumere soluzioni di traduzione per eventi globali. Goditi consegne puntuali e assistenza personalizzata, tutto dalla comodità della tua casa o dispositivo mobile.";
+      h3_1.innerHTML = "Comunicazione Migliorata";
+      t5.innerHTML = "Le soluzioni innovative di Foné facilitano la comunicazione senza problemi attraverso le barriere linguistiche, garantendo un'interazione chiara ed efficace in qualsiasi contesto.";
+      h3_2.innerHTML = "Esperienza Senza Paragoni";
+      t6.innerHTML = "Con un team di professionisti altamente qualificati, Foné offre esperienza e supporto senza pari per soddisfare le tue esigenze uniche di comunicazione.";
+      h3_4.innerHTML = "Accessibilità Globale";
+      t7.innerHTML = "Che tu stia organizzando una conferenza internazionale o facendo affari all'estero, i servizi di Foné sono disponibili in tutto il mondo, garantendo accessibilità ovunque tu vada.";
+      h3_5.innerHTML = "Soluzioni Su Misura";
+      t8.innerHTML = "Foné comprende che ogni cliente è unico, per questo offrono soluzioni personalizzabili per soddisfare i tuoi requisiti specifici, garantendo un'esperienza di comunicazione personalizzata ed efficace.";
+      h2_4.innerHTML = "Esplora il Mondo con i Nostri Tour Indimenticabili";
+      t9.innerHTML = "Imbarcati in un viaggio indimenticabile con la nostra selezione di tour. Dai luoghi storici alle gemme nascoste, scopri le meraviglie del mondo con guide esperte ed esperienze coinvolgenti adatte al gusto di ogni viaggiatore.";
+      cta4.innerHTML = "Esplora i Tour";
+      t10.innerHTML = "Le agenzie hanno beneficiato dal noleggio e dall'acquisto delle nostre radio";
+      t11.innerHTML = "Conferenze internazionali partecipate";
+      t12.innerHTML = "Individui hanno apprezzato i nostri tour";
+      h2_5.innerHTML = "Hai delle domande?";
+      t13.innerHTML = "Non esitare a contattarci! Il nostro team dedicato è qui per fornirti risposte, orientamento e supporto. Che si tratti dei nostri prodotti, servizi o di qualsiasi altra cosa, siamo impegnati a garantire che la tua esperienza con noi sia fluida e senza problemi. Contattaci e lasciaci aiutare in ogni passo del percorso.";
+      cta5.innerHTML = "leggi di più";
+      t14.innerHTML = "Cos'è Foné Firenze e quali servizi offre?";
+      t15.innerHTML = "Foné Firenze è un'azienda che offre servizi di noleggio e vendita di radio per visite guidate, nonché organizzazione di tour e soluzioni di traduzione per eventi globali.";
+      t16.innerHTML = "Come funziona il noleggio di radio per visite guidate?";
+      t17.innerHTML = "Noleggiare radio per visite guidate è semplice: devi solo selezionare il numero di dispositivi di cui hai bisogno, le date di noleggio e fare la prenotazione online.";
+      t18.innerHTML = "Offrite tour guidati in diverse lingue?";
+      t19.innerHTML = "Sì, offriamo tour guidati in una vasta gamma di lingue per soddisfare le esigenze dei nostri clienti.";
+      t20.innerHTML = "Come posso prenotare un tour o noleggiare attrezzature?";
+      t21.innerHTML = "Puoi prenotare un tour o noleggiare attrezzature direttamente tramite il nostro sito web, o puoi anche contattare il nostro team di assistenza clienti per ulteriori assistenza.";
+      t22.innerHTML = "Siamo qui per fornire supporto e chiarire qualsiasi dubbio tu possa avere sui nostri servizi.";
+      h1.innerHTML = "Hai bisogno di assistenza o hai una domanda?";
+      about_us.innerHTML = "chi siamo";
+      services.innerHTML = "servizi";
+      blog.innerHTML = "blog";
+      contact.innerHTML = "contatto";
+      h1_1.innerHTML = "I Proprietari di Agenzie di Tour Condividono la Loro Straordinaria Esperienza con Foné";
+      h2_6.innerHTML = "Resta Aggiornato";
+      t23.innerHTML = "Iscriviti alla nostra Mailing List per Promozioni Esclusive, Prodotti, Servizi e Aggiornamenti!";
+      account.innerHTML = "account";
+      sign_up.innerHTML = "registrati";
+      log_in.innerHTML = "accedi";
+      reset.innerHTML = "resetta password";
+      legal1.innerHTML = "termini e condizioni";
+      legal2.innerHTML = "informativa sulla privacy";
+      cta6.innerHTML = "Noleggia Radio Qui";
+  } else if(getLanguage === "francais"){
+      Herobulb.innerHTML = "Profitez d'un accès en ligne fluide, de livraisons rapides et d'un support personnalisé de n'importe où dans le monde. Votre prochaine aventure vous attend, à un clic de distance!";
+      explore.innerHTML = "explorer";
+      cta1.innerHTML = "Louez des radios aujourd'hui!";
+      shop.innerHTML = "boutique";
+      cta2.innerHTML = "Inscrivez-vous et recevez: 30% de réduction sur tout!";
+      h2_1.innerHTML = "Location et vente de récepteurs audio pour visites guidées";
+      t1.innerHTML = "Qualité supérieure, audio cristallin, facile à utiliser, fiable, avec jusqu'à 10 jours d'autonomie. Notre système permet une expérience de visite enrichissante, sans bruit et respectueuse de l'environnement.";
+      cta3.innerHTML = "Réserver le service";
+      t2.innerHTML = "Location de guides audio et création d'itinéraires multilingues pour différentes destinations touristiques avec des orateurs et des experts qualifiés.";
+      h2_2.innerHTML = "Solutions de Traduction";
+      t3.innerHTML = "Louez nos systèmes audio pour des événements mondiaux, des conférences et des réunions internationales. Qualité premium et support technique complet, dédié et personnalisé.";
+      h2_3.innerHTML = "Plateforme de Réservation en Ligne";
+      t4.innerHTML = "Maintenant, vous pouvez accéder rapidement à n'importe lequel de nos services de n'importe où dans le monde avec notre Plateforme de Réservation en Ligne. Avec un simple clic, vous pouvez louer ou acheter des récepteurs audio pour des visites guidées, réserver des circuits avec des guides multilingues ou embaucher des solutions de traduction pour des événements mondiaux. Profitez de livraisons ponctuelles et d'une assistance personnalisée, le tout depuis le confort de votre maison ou de votre appareil mobile.";
+      h3_1.innerHTML = "Communication Améliorée";
+      t5.innerHTML = "Les solutions innovantes de Foné facilitent la communication sans faille à travers les barrières linguistiques, garantissant une interaction claire et efficace dans n'importe quel contexte.";
+      h3_2.innerHTML = "Expertise Inégalée";
+      t6.innerHTML = "Avec une équipe de professionnels hautement qualifiés, Foné offre une expertise et un support inégalés pour répondre à vos besoins uniques en matière de communication.";
+      h3_4.innerHTML = "Accessibilité Mondiale";
+      t7.innerHTML = "Que vous organisiez une conférence internationale ou fassiez des affaires à l'étranger, les services de Foné sont disponibles dans le monde entier, garantissant une accessibilité où que vous soyez.";
+      h3_5.innerHTML = "Solutions Sur Mesure";
+      t8.innerHTML = "Foné comprend que chaque client est unique, c'est pourquoi ils offrent des solutions personnalisables pour répondre à vos besoins spécifiques, garantissant une expérience de communication personnalisée et efficace.";
+      h2_4.innerHTML = "Explorez le Monde avec Nos Circuits Inoubliables";
+      t9.innerHTML = "Embarquez pour un voyage inoubliable avec notre sélection de circuits. Des sites historiques aux joyaux cachés, découvrez les merveilles du monde avec des guides experts et des expériences immersives adaptées à tous les goûts de voyageurs.";
+      cta4.innerHTML = "Explorer les Circuits";
+      t10.innerHTML = "Les agences ont bénéficié de la location et de l'achat de nos radios";
+      t11.innerHTML = "Conférences internationales assistées";
+      t12.innerHTML = "Les individus ont apprécié nos circuits";
+      h2_5.innerHTML = "Vous avez des questions?";
+      t13.innerHTML = "N'hésitez pas à nous contacter! Notre équipe dévouée est là pour vous fournir des réponses, des conseils et un soutien. Que ce soit pour nos produits, nos services ou toute autre chose, nous nous engageons à garantir que votre expérience avec nous soit fluide et sans tracas. Contactez-nous et laissez-nous vous aider à chaque étape.";
+      cta5.innerHTML = "en savoir plus";
+      t14.innerHTML = "Qu'est-ce que Foné Firenze et quels services offre-t-il?";
+      t15.innerHTML = "Foné Firenze est une société qui propose des services de location et de vente de radios pour des visites guidées, ainsi que l'organisation de circuits et des solutions de traduction pour des événements mondiaux.";
+      t16.innerHTML = "Comment fonctionne la location de radios pour des visites guidées?";
+      t17.innerHTML = "Louer des radios pour des visites guidées est simple: il vous suffit de sélectionner le nombre de dispositifs dont vous avez besoin, les dates de location et de faire votre réservation en ligne.";
+      t18.innerHTML = "Offrez-vous des visites guidées dans différentes langues?";
+      t19.innerHTML = "Oui, nous proposons des visites guidées dans une grande variété de langues pour répondre aux besoins de nos clients.";
+      t20.innerHTML = "Comment puis-je réserver un circuit ou louer du matériel?";
+      t21.innerHTML = "Vous pouvez réserver un circuit ou louer du matériel directement via notre site Web, ou vous pouvez également contacter notre équipe de service clientèle pour obtenir une assistance supplémentaire.";
+      t22.innerHTML = "Nous sommes là pour fournir un soutien et clarifier tout doute que vous pourriez avoir sur nos services.";
+      h1.innerHTML = "Besoin d'aide ou avez-vous une question?";
+      about_us.innerHTML = "à propos de nous";
+      services.innerHTML = "services";
+      blog.innerHTML = "blog";
+      contact.innerHTML = "contact";
+      h1_1.innerHTML = "Les Propriétaires d'Agences de Voyages Partagent Leur Expérience Incroyable avec Foné";
+      h2_6.innerHTML = "Restez Informé";
+      t23.innerHTML = "Abonnez-vous à Notre Liste de Diffusion pour des Promotions Exclusives, des Produits, des Services et des Mises à Jour!";
+      account.innerHTML = "compte";
+      sign_up.innerHTML = "s'inscrire";
+      log_in.innerHTML = "se connecter";
+      reset.innerHTML = "réinitialiser le mot de passe";
+      legal1.innerHTML = "conditions d'utilisation";
+      legal2.innerHTML = "politique de confidentialité";
+      cta6.innerHTML = "Louez une Radio Ici";
+      
   }
 }
