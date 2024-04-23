@@ -1,6 +1,10 @@
 /* Botones de traducción */
 let espanol = document.getElementById("espanol");
 let english = document.getElementById("english");
+let italiano = document.getElementById("italiano");
+let francais = document.getElementById("francais");
+let russian = document.getElementById("russian");
+let german = document.getElementById("german");
 
 /* Elementos a traducir */
 let Herobulb = document.getElementById("Herobulb");
